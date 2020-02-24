@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Método Newton-Raphson</title>
+
+	<script src="js/scripts_newton-raphson.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles_newton-raphson.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script src="js/nerdamer.core.js"></script> 
+	<script src="js/Algebra.js"></script>
+	<script src="js/Calculus.js"></script>
+	<script src="js/Solve.js"></script>
+	<script src="js/Extra.js"></script> 
+
+</head>
+<body style="background-image: url(img/paper.jpg);">
+
+	<nav class="navbar navbar-light bg-light">
+		<a href="index.html"><button type="button" class="btn btn-secondary">Home</button></a>
+		<a style="margin-left: -16%;" href="index.html#temas"><button type="button" class="btn btn-warning">Temas</button></a>
+
+  		<h1 style="margin-left: 5%; font-weight: bold;">MÉTODO NEWTON-RAPHSON</h1>
+  		<form class="form-inline">
+    		<button class="btn btn-danger my-2 my-sm-0" type="submit">Try Again</button>
+  		</form>
+	</nav>
+
+	<div class="acomodacion" style="text-align: justify;">
+		<p>Este método  de resolución numérica busca un cero de la función f(x) por aproximaciones sucesivas a partir de un valor inicial X0. <br>
+		El método Newton-Raphson es uno de los mas utilizados para localizar raíces ya que en general es muy eficiente y siempre converge para una función polinomial. <br><br>
+	
+		Los pasos son: <br><br>
+
+		1. Poner un valor inicial X0. <br>
+		2. Evaluar ese valor en el polinomio original. <br>
+		3. Derivar el polinomio y posteriormente evaluar el valor inicial en él. <br>
+		4. Restar el valor inicial menos la división del valor obtenido del paso 2 entre el valor obtenido del paso 3. <br>
+		5. Repetir este ciclo hasta que el valor obtenido en el paso 4 sea igual al valor inicial. <br>
+
+		<hr>
+
+		<br>
+		
+		</p>
+
+		<p style="color: #ca0202;">
+		¿Quieres saber cómo funciona el Método Newton-Raphson paso a paso? <br> Ingresa una ecuación de 3er Grado, elige un posible número para sacar una raíz (el que tú quieras), y observa cómo paso a paso se obtiene UNA de las raíces.
+		</p>
+	</div>
+
+	<br><br>
+
+	<h4 style="margin-left: 5px;">Ingrese un polinomio para sacar una de sus raíces:</h4><br>
+
+	<h2 style="float: left; margin-left: 5px;">Polinomio:</h2><input id="ecuacion" type="text" placeholder="Ej.: x^3+2x^2-5x-6"> 
+
+	<br><br><br>
+
+	<h4 style="margin-left: 5px;">Ingrese un posible número para sacar una raíz:</h4><br>
+
+	<h2 style="float: left; margin-left: 5px;">Posible Raíz:</h2><input id="raizGuess" type="text" placeholder="Ej.: 0"><br><br>
+
+	<br><br>
+
+	<button style="margin-left: 30%;" class="btn btn-success" onclick="resolver()">Obtener raíz</button>
+
+	<br><br><br>
+
+	<h4 id="answer" style="float: left; font-weight: bold; display: none;">Una raíz del polinomio es: </h4><div id="raiz"></div>
+
+	<div style="margin-left: 1% !important;" id="resultado"></div>
+	<div style="margin-left: -7% !important;" id="resultado2"></div>
+	<div style="margin-left: -7% !important;" id="resultado3"></div>
+	<div style="margin-left: -7% !important;" id="resultado4"></div>
+	
+</body>
+</html>

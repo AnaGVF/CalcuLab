@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>La Regla de los 4 Pasos</title>
+
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script src="js/nerdamer.core.js"></script> 
+	<script src="js/Algebra.js"></script>
+	<script src="js/Calculus.js"></script>
+	<script src="js/Solve.js"></script>
+	<script src="js/Extra.js"></script> 
+
+</head>
+<body style="background-image: url(img/paper.jpg);">
+
+	<nav class="navbar navbar-light bg-light">
+		<a href="index.html"><button type="button" class="btn btn-secondary">Home</button></a>
+		<a style="margin-left: -19%;" href="index.html#temas"><button type="button" class="btn btn-warning">Temas</button></a>
+
+  		<h1 style="margin-left: 5%; font-weight: bold;">LA REGLA DE LOS 4 PASOS</h1>
+  		<form class="form-inline">
+    		<button class="btn btn-danger my-2 my-sm-0" type="submit">Try Again</button>
+  		</form>
+	</nav>
+
+	<div class="acomodacion" style="text-align: justify;">
+		<p>
+		La derivada de una función también se puede obtener como el límite del cociente de incrementos, conocido como la regla de los cuatro pasos.
+
+		<br><br>
+
+		<img style="display: block; margin-left: auto; margin-right: auto; width: 80%;" src="img/ejemplo4Pasos.jpg" alt="ejemplo">
+		
+		</p>
+
+		<hr>
+
+		<br><br>
+
+		<p style="color: #ca0202;">
+		En el siguiente programa podrás ingresar un polinomio y posteriormente ver cómo paso a paso se obtiene su derivada usando la Regla de los 4 Pasos.
+		</p>
+	</div>
+
+	<br><br>
+
+	<h4 style="margin-left: 5px;">Ingrese una ecuación para sacar su derivada:</h4><br>
+
+	<h2 style="float: left; margin-left: 5px;">Ecuación: </h2><br><br>
+	<h2 style="float: left; margin-left: 140px;"> y = </h2> <input id="ecuacion" type="text" placeholder="Ej.: x^3"> 
+
+	<br><br><br>
+
+	<button style="margin-left: 30%;" class="btn btn-success" onclick="derivar()">Calcular derivada</button>
+
+	<br><br><br>
+
+	<h4 id="answer" style="float: left; font-weight: bold; display: none;">La derivada de la ecuación es: </h4><div id="derivada" style="text-align: center; padding: 20px;"></div>
+	
+</body>
+</html>

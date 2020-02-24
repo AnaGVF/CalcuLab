@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transformaciones</title>
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-- <script src="js/gauss.js"></script> -->
+	<script type="text/javascript" src="js/EliminacionGauss.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script src="js/nerdamer.core.js"></script> 
+	<script src="js/Algebra.js"></script>
+	<script src="js/Calculus.js"></script>
+	<script src="js/Solve.js"></script>
+	<script src="js/Extra.js"></script> 
+
+</head>
+<body style="background-image: url(img/paper.jpg);">
+
+	<nav class="navbar navbar-light bg-light">
+		<a href="index.html"><button type="button" class="btn btn-secondary">Home</button></a>
+		<a style="margin-left: -22%;" href="index.html#temas"><button type="button" class="btn btn-warning">Temas</button></a>
+
+		<h1 style="margin-left: 5%; font-weight: bold;">TRANSFORMACIONES</h1>
+		<form class="form-inline">
+			<button class="btn btn-danger my-2 my-sm-0" type="submit">Try Again</button>
+		</form>
+	</nav>
+
+	<div class="acomodacion" style="text-align: justify;">
+		<p>El método de Gauss consiste en transformar el sistema dado en otro equivalente. Para ello se toma la matriz ampliada del sistema y mediante las operaciones elementales con sus filas la transformamos en una matriz triangular superior (o inferior). <br>
+		De esta forma obtenemos un sistema equivalente al inicial y que es muy facil de resolver.
+
+		<br><br>
+
+		En otras palabras, es esencialmente el método de reducción. En el método de Gauss se opera con ecuaciones, como se hace en el método de reducción, pero uno se ahorra el escribir las incognitas porque al ir los coeficientes de una misma incognita siempre en una misma columna, uno sabe en todo momento cual es la incognita a la que multiplican. 
+
+		<hr>
+
+		<br>
+		
+		</p>
+
+		<p style="color: #ca0202;">
+		En el siguiente programa podrás resolver ecuaciones de 3x3 o 4x4 mediante el método Gauss-Jordan. ¡Úsalo para encontrar las soluciones a tus ecuaciones!
+		</p>
+	</div>
+
+	<br><br>
+
+	<h4 style="margin-left: 5px;">Elija una opción para resolver con el método Gauss-Jordan: </h4><br>
+
+	<select id="selecciones" name="form_select" onchange="showDiv(this)">
+		<!-- <option value="1">2x2</option> -->
+		<option value="2">3x3</option>
+		<option value="3">4x4</option>
+	</select>
+
+	<br><br>
+
+		<!-- <div id="2" style="display: none;">
+			<input id="number00" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number01" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number02" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;">
+
+			<br><br>
+
+			<input id="number10" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number11" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number12" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;">
+
+			<br><br>
+		</div> -->
+
+		<div id="3x3" style="display: none;">
+			<input placeholder="Ej. 1" id="number00" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input placeholder="Ej. 1" id="number01" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input placeholder="Ej. 1" id="number02" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input placeholder="Ej. 6" id="number03" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;">
+
+			<br><br>
+
+			<input placeholder="Ej. 2" id="number10" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input placeholder="Ej. 1" id="number11" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input placeholder="Ej. 2" id="number12" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input placeholder="Ej. 10" id="number13" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;">
+
+			<br><br>
+
+			<input placeholder="Ej. 1" id="number20" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input placeholder="Ej. 2" id="number21" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input placeholder="Ej. 3" id="number22" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input placeholder="Ej. 14" id="number23" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;">
+
+			<br><br>
+		</div>		
+
+		<div id="4x4" style="display: none;">
+			<input id="number00" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number01" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number02" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number03" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number04" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;">
+
+			<br><br>
+
+			<input id="number10" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number11" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number12" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number13" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number14" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;">
+
+			<br><br>
+
+			<input id="number20" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number21" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number22" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number23" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number24" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;">
+
+
+			<br><br>
+
+			<input id="number30" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number31" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number32" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number33" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;"><input id="number34" type="number" style="font-size: 1em; width: 10%; margin-left: 5%;">
+
+			<br><br>
+		</div>
+
+	<!-- BOTÓN -->
+	<!-- <button id="two" style="margin-left: 66%; display: none;" class="btn btn-success" onclick="Calcular2()">Resolver Gauss-Jordan</button> -->
+
+	<!-- BOTÓN -->
+	<button id="three" style="margin-left: 66%; display: none;" class="btn btn-success" onclick="Calcular3()">Resolver Gauss-Jordan</button>
+
+	<!-- BOTÓN -->
+	<button id="four" style="margin-left: 66%; display: none;" class="btn btn-success" onclick="Calcular4()">Resolver Gauss-Jordan</button>
+
+	<br><br><br>
+
+	<!-- <div id="answer2" style="display: none;">		
+		<h4 style="float: left; font-weight: bold; margin-left: 5px; margin-right: 2%;">El valor de X = </h4><div id="respuesta21" style="font-size: 1.5em;"></div>
+
+		<br>
+
+		<h4 style="float: left; font-weight: bold; margin-left: 5px; margin-right: 2%;">El valor de Y = </h4><div id="respuesta22" style="font-size: 1.5em;"></div>
+
+		<br>
+	</div> -->
+
+	<div id="answer3" style="display: none;">		
+		<h4 style="float: left; font-weight: bold; margin-left: 5px; margin-right: 2%;">El valor de X = </h4><div id="respuesta31" style="font-size: 1.5em;"></div>
+
+		<br>
+
+		<h4 style="float: left; font-weight: bold; margin-left: 5px; margin-right: 2%;">El valor de Y = </h4><div id="respuesta32" style="font-size: 1.5em;"></div>
+
+		<br>
+
+		<h4 style="float: left; font-weight: bold; margin-left: 5px; margin-right: 2%;">El valor de Z = </h4><div id="respuesta33" style="font-size: 1.5em;"></div>
+
+		<br>
+	</div>
+
+	<div id="answer4" style="display: none;">		
+		<h4 style="float: left; font-weight: bold; margin-left: 5px; margin-right: 2%;">El valor de W = </h4><div id="respuesta41" style="font-size: 1.5em;"></div>
+
+		<br>
+
+		<h4 style="float: left; font-weight: bold; margin-left: 5px; margin-right: 2%;">El valor de X = </h4><div id="respuesta42" style="font-size: 1.5em;"></div>
+
+		<br>
+
+		<h4 style="float: left; font-weight: bold; margin-left: 5px; margin-right: 2%;">El valor de Y = </h4><div id="respuesta43" style="font-size: 1.5em;"></div>
+
+		<br>
+
+		<h4 style="float: left; font-weight: bold; margin-left: 5px; margin-right: 2%;">El valor de Z = </h4><div id="respuesta44" style="font-size: 1.5em;"></div>
+
+		<br>
+	</div>
+
+</body>
+</html>

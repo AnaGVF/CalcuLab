@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto Final CDI</title>
+
+	<link rel="stylesheet" href="css/styles.css"> <!-- Configuración Previa -->
+	<link rel="stylesheet" href="css/stylesMAIN.css"> <!-- Configuración Inicial -->
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+
+	<script defer type="text/javascript" src="js/vendor/jquery.js"></script>
+	<script defer type="text/javascript" src="js/vendor/foundation.js"></script>
+	<script defer type="text/javascript" src="js/app.js"></script>
+	<script defer type="text/javascript" src="js/vendor/foundation.min.js"></script>
+	
+	<script defer type="text/javascript" src="js/vendor/what-input.js"></script>
+</head>
+<body>
+	<!-- Top Bar -->
+	<div class="top-bar-container sticky-container no-altura" data-sticky-container="">
+		<div class="sticky top-bar is-anchored altura-100 width-100" data-sticky data-margin-top="0" style="background-color: transparent; position: fixed;">
+			<div class="top-bar-right" style="background-color: transparent !important;">
+				<ul class="menu align-right menuCOLOR" style="background-color: transparent;">
+					<li>
+						<a class="option" href="#home">Home</a>
+					</li>
+					<li>
+						<a class="option" href="#acercaDe">Acerca de</a>
+					</li>		
+					<li>
+						<a class="option" href="#temas">Temas</a>
+					</li>			
+					<li>
+						<a class="option" href="#autora">Autora</a>
+					</li>		
+				</ul>				
+			</div>			
+		</div>
+	</div>
+
+	<!-- Pantalla Inicio -->
+	<section id="home" class="section1 height-topbar">
+		<div class="row expanded height-100">
+			<div class="height-topbar width-100">
+				<div class="row expanded left-padding-2 align-left align-middle height-100" style="flex-direction: row;">
+					<div class="large-12 titulo columns">
+						<h1>CalcuLab</h1>
+						<p>Autora: Ana Graciela Vassallo Fedotkin</p>
+					</div>
+					<div class="large-5 columns left-padding-1">
+						<div style="justify-content: flex-end;" class="row align-middle margin-0">
+							<button class="iniciar"><a style="color: white;" href="#temas">Iniciar</a></button>
+						</div>						
+					</div>
+					<div class="large-12 columns">
+						<div class="row align-middle margin-0">
+							<p class="year">© 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>		
+	</section>
+
+	<!-- Pantalla Acerca de -->
+	<section id="acercaDe" class="section2 height-topbar">
+		<div class="row expanded height-100">
+			<div class="height-topbar width-100">
+				<div class="row expanded align-center align-middle height-100" style="flex-direction: row;">
+					<div class="large-12 align-middle align-center subtitulo columns" style="margin-top: 5%;">
+						<h2>Acerca de CalcuLab</h2>
+						<div style="background-color: #0006;">
+							<p style="text-align: center;">CalcuLab es una aplicación matemática creada para demostrar y enseñar el Cálculo Diferencial e Integral. <br> A través de sus contenidos y temas, se podrá experimentar sobre temas selectos del mundo del Cálculo, además de servir como una herramienta para hacer comprobaciones a tus propios problemas y planteamientos. <br> ¿Qué esperas para finalmente practicar tus conocimientos y divertirte con el mundo de las matemáticas? <br>
+							¡Haz click <a href="#temas">aquí</a> para comenzar! </p>
+						</div>						
+					</div>
+					<div class="row expanded align-center align-middle">
+						<div class="large-4 align-middle align-center columns hasFlex">
+							<img style="width: 75%;" src="img/1.jpg" alt="">
+						</div>
+						<div class="large-4 align-middle align-center columns hasFlex">
+							<img style="width: 100%;" src="img/2.jpg" alt="">
+						</div>
+						<div class="large-4 align-middle align-center columns hasFlex">
+							<img style="width: 80%;" src="img/3.jpg" alt="">					
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>		
+	</section>
+
+	<!-- Pantalla Temas -->
+	<section id="temas" class="section3 height-topbar">
+		<div class="row expanded height-100">
+			<div class="height-topbar width-100">
+				<div class="row expanded align-center align-middle height-100" style="flex-direction: row;">
+					<div class="large-12 align-middle align-center subtitulo columns" style="margin-top: 5%;">
+						<h2>Temas</h2>
+					</div>
+					<div class="large-6 row expanded align-center align-middle" style="flex-direction: column;">
+						<div class="large-12 align-center align-middle">
+							<div class="large-12 align-middle align-center columns hasFlex">
+								<a href="sistemasEcuaciones.html" class="option2">Sistemas de Ecuaciones</a>
+							</div>
+							<div class="large-12 align-middle align-center columns hasFlex">
+								<a href="transformaciones.html" class="option2">Transformaciones (3x3 y 4x4)</a>
+							</div>
+							<div class="large-12 align-middle align-center columns hasFlex">
+								<a href="newton-raphson.html" class="option2">Newton-Raphson</a>
+							</div>
+							<div class="large-12 align-middle align-center columns hasFlex">
+								<a href="polinomios-3.html" class="option2">Obtención de Raíces de Polinomios Grado 3</a>
+							</div>
+							<div class="large-12 align-middle align-center columns hasFlex">
+								<a href="polinomios-4.html" class="option2">Obtención de Raíces de Polinomios Grado 4</a>
+							</div>
+						</div>						
+					</div>
+
+					<div class="large-6 row expanded align-center align-middle" style="flex-direction: column;">
+						<div class="large-12 align-right align-middle">
+							<div class="large-12 align-middle align-center columns hasFlex">
+								<a href="divisionSintetica.html" class="option2">División Sintética</a>
+							</div>
+							<div class="large-12 align-middle align-center columns hasFlex">
+								<a href="descartes.html" class="option2">Ley de los Signos de Descartes</a>
+							</div>
+							<div class="large-12 align-middle align-center columns hasFlex">
+								<a href="4Pasos.html" class="option2">Regla de los 4 Pasos</a>
+							</div>
+							<div class="large-12 align-middle align-center columns hasFlex">
+								<a href="maxMin.html" class="option2">Máximos y Mínimos</a>
+							</div>
+							<div class="large-12 align-middle align-center columns hasFlex">
+								<a href="simpson.html" class="option2">Método de Simpson</a>
+							</div>
+							<div class="large-12 align-middle align-center columns hasFlex">
+								<a href="AppCI.html" class="option2">Aplicación del Cálculo Integral en las Finanzas</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>		
+	</section>
+
+	<!-- Pantalla Autora -->
+	<section id="autora" class="section2 height-topbar">
+		<div class="row expanded height-100">
+			<div class="height-topbar width-100">
+				<div class="row expanded align-center align-middle height-100" style="flex-direction: row;">
+					<div class="large-12 align-middle align-center subtitulo columns" style="margin-top: 5%;">
+						<h2>Autora</h2>
+						<div style="background-color: #0006;">
+							<p style="text-align: center;">Ana Graciela Vassallo Fedotkin <br> Carrera: Ingeniería de Software <br>
+							Expediente: 278775 <br> Universidad Autónoma de Querétaro <br> <i>Ana Vassallo actualmente cursa el 3er Semestre y es una apasionada por la tecnología, la programación y los videojuegos. </i> </p>
+						</div>						
+					</div>
+					<div class="row expanded align-center align-middle">
+						<div class="large-4 align-middle align-center columns hasFlex">
+							<img style="width: 100%;" src="img/anagvf.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>		
+	</section>
+
+</body>
+</html>

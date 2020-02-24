@@ -1,0 +1,450 @@
+/*WELCOME PAGE*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+#container {
+	height: 100%;
+	width: 100%;
+	float: left;
+	position: relative;
+	background-image: url(../img/paper.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+	#container h1 {
+		font-size: 55px; 
+		font-weight: bold; 
+		position: absolute;
+	}
+
+	#container h4 {
+		font-size: 25px;
+		font-style: italic;
+		position: relative;
+	}
+
+#rectTitulo {
+	margin-top: -440px;
+	float: left;
+	width: 920px; 
+	height: 80px;
+	padding-top: 2px;
+	background: rgba(255, 255, 0, 0.4);  
+	position: absolute;
+	box-sizing: border-box;
+	border-radius: 20px;
+	box-shadow: 0px 6px 25px black;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+#rectInstrucciones {
+	margin-top: -180px;
+	float: left;
+	width: 230px; 
+	height: 40px; 
+	padding-top: 2px;
+	background: rgba(55, 116, 238, 0.3);  
+	position: absolute;
+	box-sizing: border-box;
+	border-radius: 20px;
+	box-shadow: 3px 2px 1px black;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+#options {
+	height: 28%;
+	width: 59%;
+	float: left;
+	position: relative;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-top: 185px;
+}
+
+	#options > .button1 {
+		float: left;
+		width: 472px; 
+		height: 40px; 
+		padding-top: 2px;
+		background: rgba(143, 247, 167, 0.5);  
+		position: absolute;
+		box-sizing: border-box;
+		border-radius: 20px;
+		box-shadow: 5px 5px 7px black;
+		padding-left: 5px;
+	}
+
+	#options > .button2 {
+		float: left;
+		width: 443px; 
+		height: 40px; 
+		padding-top: 2px;
+		background: rgba(143, 247, 167, 0.5);  
+		position: absolute;
+		box-sizing: border-box;
+		border-radius: 20px;
+		box-shadow: 5px 5px 7px black;
+		margin-top: 60px;
+		padding-left: 5px;
+	}
+
+	#options > .button3 {
+		float: left;
+		width: 443px; 
+		height: 40px; 
+		padding-top: 2px;
+		background: rgba(143, 247, 167, 0.5);  
+		position: absolute;
+		box-sizing: border-box;
+		border-radius: 20px;
+		box-shadow: 5px 5px 7px black;
+		margin-top: 120px;
+		padding-left: 5px;
+	}
+
+	#options > .credits {
+		float: left;
+		width: 443px; 
+		height: 40px; 
+		padding-top: 2px;  
+		position: absolute;
+		box-sizing: border-box;
+		border-radius: 20px;
+		padding-left: 5px;
+		margin-top: 265px;
+
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;		
+	}
+
+	#options h3 {
+		font-size: 25px;
+		font-weight: bold;
+		position: relative;
+	}
+
+/*ECUACIONES DE CUARTO GRADO*/
+
+#ecuacion, #raizGuess {
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+	border-radius: 2px;
+	margin-left: 20px;
+	margin-top: 5px;
+	border-style: solid black;
+	border-color: black;
+}
+
+#raiz {
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	font-size: 20px;
+	border: 2px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-color: red;
+	display: none;
+}
+
+#derivada {
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	font-size: 20px;
+	border: 2px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-color: rgb(255, 0, 0, 0.5);
+	display: none;
+}
+
+#resultado {
+	float: left;
+	position: relative;
+	margin-left: 20%;
+	margin-top: -405px;
+	text-align: center;
+	font-size: 25px;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+	#resultado td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border: 1px solid black;
+	}
+
+#resultado2 {
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	margin-top: -405px;
+	text-align: center;
+	font-size: 25px;
+	background-color: white;
+}
+		
+	#resultado2 td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+#resultado3 {
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	margin-top: -405px;
+	text-align: center;
+	font-size: 25px;
+	background-color: white;
+}
+
+	#resultado3 td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+#resultado4 {
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	margin-top: -405px;
+	text-align: center;
+	font-size: 25px;
+	background-color: white;
+}
+
+	#resultado4 td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+/*Transformaciones*/
+
+#selecciones {
+	font-size: 1.5em;
+	margin-left: 66%;
+}
+
+/*Máximos y Mínimos*/
+#maxmin {
+	margin-left: 55%;
+	font-size: 1.5em;
+}
+
+/*Simpson*/
+#integral {
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	font-size: 20px;
+	border: 2px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-color: red;
+	display: none;
+}
+
+#resultado {
+	float: left;
+	position: relative;
+	margin-right: 7%;
+	margin-left: -46%;
+	margin-top: 6%;
+	text-align: center;
+	font-size: 25px;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+	#resultado td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border: 1px solid black;
+	}
+
+#resultado2 {
+	float: left;
+	position: relative;
+	margin-right: 7%;
+	margin-left: -36%;
+	margin-top: 6%;
+	text-align: center;
+	font-size: 25px;
+	box-sizing: border-box;
+	background-color: white;
+}
+		
+	#resultado2 td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+#resultado3 {
+	float: left;
+	position: relative;
+	margin-right: 7%;
+	margin-left: -26%;
+	margin-top: 6%;
+	text-align: center;
+	font-size: 25px;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+	#resultado3 td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+#resultado4 {
+	float: left;
+	position: relative;
+	margin-right: 7%;
+	margin-left: -13%;
+	margin-top: 6%;
+	text-align: center;
+	font-size: 25px;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+	#resultado4 td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+#resultado5 {
+	float: left;
+	position: relative;
+	margin-right: 7%;
+	margin-left: -6%;
+	margin-top: 6%;
+	text-align: center;
+	font-size: 25px;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+	#resultado5 td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+#resultado6 {
+	float: left;
+	position: relative;
+	margin-right: 7%;
+	margin-left: -4%;
+	margin-top: 6%;
+	text-align: center;
+	font-size: 25px;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+	#resultado6 td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+#LS, #LI, #n {
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+	border-radius: 2px;
+	margin-left: 20px;
+	margin-top: 5px;
+	border-style: solid black;
+	border-color: black;
+}
+
+/*Aplicación del Cálculo Integral en las Finanzas*/
+
+#ecuacion1, #ecuacion2, #ecuacion3, #raizPositiva {
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+	border-radius: 2px;
+	margin-left: 20px;
+	margin-top: 5px;
+	border-style: solid black;
+	border-color: black;
+}
+
+#raizPositiva2 {
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+	border-radius: 2px;
+	margin-left: 20px;
+	margin-top: 5px;
+	border-style: solid black;
+	border-color:
+	black;
+}
+	
+/*Sistemas de Ecuaciones*/
+
+#respuestaX, #respuestaY {
+	text-align: center;
+	margin-right: 50%;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+#respuestaZ {
+	text-align: center;
+	margin-right: 19%;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+/*General Temas*/
+.acomodacion {
+	padding: 5%;
+	font-size: 1.2em;
+	font-style: italic;
+	background-color: #F4F1EF;
+}
+

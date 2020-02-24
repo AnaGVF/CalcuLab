@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Método de Simpson</title>
+
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script src="js/nerdamer.core.js"></script> 
+	<script src="js/Algebra.js"></script>
+	<script src="js/Calculus.js"></script>
+	<script src="js/Solve.js"></script>
+	<script src="js/Extra.js"></script> 
+
+</head>
+<body style="background-image: url(img/paper.jpg);">
+
+	<nav class="navbar navbar-light bg-light">
+		<a href="index.html"><button type="button" class="btn btn-secondary">Home</button></a>
+		<a style="margin-left: -22%;" href="index.html#temas"><button type="button" class="btn btn-warning">Temas</button></a>
+
+  		<h1 style="margin-left: 5%; font-weight: bold;">MÉTODO DE SIMPSON</h1>
+  		<form class="form-inline">
+    		<button class="btn btn-danger my-2 my-sm-0" type="submit">Try Again</button>
+  		</form>
+	</nav>
+
+	<div class="acomodacion" style="text-align: justify;">
+		<p>
+		El Método de Simpson es un método de integración numérica que se utiliza para obtener la aproximación de una integral. <br>
+		La fórmula fue utilizada por primera vez por Evangelista Torricelli, pero debe su nombre al matemático Inglés Thomas Simpson. <br><br>
+		En integración numérica, una forma de aproximar una integral definida en un intervalo [a,b] es mediante la regla del trapecio, es decir, que sobre cada subintervalo en el que se divide [a,b] se aproxima f por un polinomio de primer grado, para luego calcular la integral como suma de las áreas de los trapecios formados en esos subintervalos. <br><br>
+
+		</p>
+
+		<hr>
+
+		<br>
+
+		<p style="color: #ca0202;">
+		En el siguiente programa puedes obtener la integral definida de un polinomio mediante el Método de Simpson. <br> ¡Inténtalo!
+		</p>
+
+	</div>
+
+	<br><br>
+
+	<h4 style="margin-left: 5px;">Ingrese una ecuación para sacar su integral por medio del método Simpson:</h4><br>
+
+	<h2 style="float: left; margin-left: 5px;">Ecuación: </h2><br><br>
+	<h2 style="float: left; margin-left: 140px;"> y = </h2> <input id="ecuacion" type="text" placeholder="Ej.: 8x^2+6x+2"><br><br><br>
+
+	<h4 style="margin-left: 5px;">Ingrese un límite superior: </h4><br>
+
+	<h4 style="float: left; margin-left: 5px;">Límite Superior: </h4><input id="LS" type="number" placeholder="Ej.: 5" style="margin-left: 20px;">
+
+	<br><br><br>
+
+	<h4 style="margin-left: 5px;">Ingrese un límite inferior: </h4><br>
+
+	<h4 style="float: left; margin-left: 5px;">Límite Inferior: </h4><input id="LI" type="number" placeholder="Ej.: 2" style="margin-left: 20px;">  
+
+	<br><br><br>
+
+	<h4 style="margin-left: 5px;">Ingrese una n: </h4><br>
+
+	<h4 style="float: left; margin-left: 5px;">n = </h4><input id="n" type="number" placeholder="Ej.: 100" style="margin-left: 20px;">  
+
+	<br><br><br>
+
+	<button style="margin-left: 30%;" class="btn btn-success" onclick="simpson()">Método Simpson</button>
+
+	<br><br><br>
+
+	<h4 id="answer" style="float: left; font-weight: bold; display: none;">La integral mediante el Método de Simpson da igual a: </h4><div id="integral"></div>
+
+	<div id="resultado"></div>
+	<div id="resultado2"></div>
+	<div id="resultado3"></div>
+	<div id="resultado4"></div>
+	<div id="resultado5"></div>
+	<div id="resultado6"></div>
+	
+</body>
+</html>

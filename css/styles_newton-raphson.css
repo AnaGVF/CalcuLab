@@ -1,0 +1,89 @@
+
+#ecuacion, #raizGuess {
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+	border-radius: 2px;
+	margin-left: 20px;
+	margin-top: 5px;
+	border-style: solid black;
+	border-color: black;
+}
+
+#raiz {
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	font-size: 20px;
+	border: 2px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-color: red;
+	display: none;
+}
+
+#resultado {
+	float: left;
+	position: relative;
+	margin-left: 20%;
+	margin-top: -405px;
+	text-align: center;
+	font-size: 25px;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+	#resultado td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border: 1px solid black;
+	}
+
+#resultado2 {
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	margin-top: -405px;
+	text-align: center;
+	font-size: 25px;
+	background-color: white;
+}
+		
+	#resultado2 td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+#resultado3 {
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	margin-top: -405px;
+	text-align: center;
+	font-size: 25px;
+	background-color: white;
+}
+
+	#resultado3 td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+#resultado4 {
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	margin-top: -405px;
+	text-align: center;
+	font-size: 25px;
+	background-color: white;
+}
+
+	#resultado4 td, th {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}

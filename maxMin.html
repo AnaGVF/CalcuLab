@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Máximos y Mínimos</title>
+
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script src="js/nerdamer.core.js"></script> 
+	<script src="js/Algebra.js"></script>
+	<script src="js/Calculus.js"></script>
+	<script src="js/Solve.js"></script>
+	<script src="js/Extra.js"></script> 
+
+</head>
+<body style="background-image: url(img/paper.jpg);">
+
+	<nav class="navbar navbar-light bg-light">
+		<a href="index.html"><button type="button" class="btn btn-secondary">Home</button></a>
+		<a style="margin-left: -22%;" href="index.html#temas"><button type="button" class="btn btn-warning">Temas</button></a>
+
+  		<h1 style="margin-left: 5%; font-weight: bold;">MÁXIMOS Y MÍNIMOS</h1>
+  		<form class="form-inline">
+    		<button class="btn btn-danger my-2 my-sm-0" type="submit">Try Again</button>
+  		</form>
+	</nav>
+
+	<div class="acomodacion" style="text-align: justify;">
+		<p>
+
+		Loas máximos y mínimos de una función son los valores más grandes o más pequeños de ésta, ya sea en una región o en todo el dominio. <br> Para encontrar los máximos y mínimos de una función, se siguen los siguientes pasos: <br><br>
+
+		1. Encontrar las raíces de la ecuación. <br> 
+		2. Obtener la segunda derivada de la ecuación y evaluar las raíces en ésta. <br>
+		3. Aplicar las reglas básicas de Máximos y Mínimos (así se identifica si un valor es máximo o mínimo). <br>
+		4. Evaluar las raices en la ecuación para obtener los valores finales correspondientes de máximos o mínimos. <br>
+
+		Las reglas básicas de Máximos y Mínimos son las siguientes: <br><br>
+
+		Si el valor de la derivada segunda en ese punto es mayor que cero, entonces ese punto es mínimo
+
+		<br><br>
+
+		<img style="display: block; margin-left: auto; margin-right: auto; width: 60%;" src="img/minimo.png" alt="ejemplo"> <br>
+
+		Si el valor de la derivada segunda en ese punto es menor que cero, entonces ese punto es máximo
+
+		<br><br>
+
+		<img style="display: block; margin-left: auto; margin-right: auto; width: 60%;" src="img/maximo.png" alt="ejemplo"> <br><br>
+		
+		</p>
+
+		<hr>
+
+		<br>
+
+		<p style="color: #ca0202;">
+		En el siguiente programa podrás ingresar una ecuación para posteriormente obtener sus valores máximos o mínimos.
+		</p>
+	</div>
+
+	<br><br>
+
+	<h4 style="margin-left: 5px;">Ingrese una ecuación para sacar sus Máximos y Mínimos:</h4><br>
+
+	<h2 style="float: left; margin-left: 5px;">Ecuación: </h2><br><br>
+	<h2 style="float: left; margin-left: 140px;"> y = </h2> <input id="ecuacion" type="text" placeholder="Ej.: 2x^3-6x^2-18x+1"> 
+
+	<br><br><br>
+
+	<button style="margin-left: 30%;" class="btn btn-success" onclick="maxMin()">Calcular Máximos y Mínimos</button>
+
+	<br><br><br>
+
+	<h4 id="answer" style="float: left; font-weight: bold; display: none;">Los Máximos y Mínimos de la ecuación son: </h4><div id="maxmin"></div>
+	
+</body>
+</html>

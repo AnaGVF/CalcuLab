@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Polinomios Grado 4</title>
+
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script src="js/nerdamer.core.js"></script> 
+	<script src="js/Algebra.js"></script>
+	<script src="js/Calculus.js"></script>
+	<script src="js/Solve.js"></script>
+	<script src="js/Extra.js"></script> 
+
+</head>
+<body style="background-image: url(img/paper.jpg);">
+
+	<nav class="navbar navbar-light bg-light">
+		<a href="index.html"><button type="button" class="btn btn-secondary">Home</button></a>
+		<a style="margin-left: -10%;" href="index.html#temas"><button type="button" class="btn btn-warning">Temas</button></a>
+
+  		<h1 style="margin-left: 5%; font-weight: bold;">OBTENCIÓN DE RAÍCES DE 4TO GRADO</h1>
+  		<form class="form-inline">
+    		<button class="btn btn-danger my-2 my-sm-0" type="submit">Try Again</button>
+  		</form>
+	</nav>
+
+	<div class="acomodacion" style="text-align: justify;">
+		<p>
+		La determinación de las raíces de una ecuación es uno de los problemas más antiguos en matemáticas y se han realizado un gran número de esfuerzos en este sentido. <br> Su importancia radica en que si podemos determinar las raíces de una ecuación también podemos determinar máximos y mínimos, valores propios de matrices, resolver sistemas de ecuaciones lineales y diferenciales, etc... <br><br>
+
+		En CalcuLab, utilizamos la divisón sintética para obtener las raíces de un polinomio de 4to Grado. Cabe resaltar que en un polinomio de 4to Grado, se obtendrán 4 raíces. <br><br>
+		Si deseas conocer más sobre la división sintética, haz click <a href="divisionSintetica.html">aquí</a>. <br>
+
+		</p>
+
+		<hr>
+
+		<br><br>
+
+		<p style="color: #ca0202;">
+		En el siguiente programa puedes sacar las raíces de cualquier polinomio de 4to Grado. <br> ¡Inténtalo!
+		</p>
+	</div>
+
+	<br><br>
+
+	<h4 style="margin-left: 5px;">Ingrese un polinomio para sacar sus raíces:</h4><br>
+
+	<h2 style="float: left; margin-left: 5px;">Polinomio:</h2><input id="ecuacion" type="text" placeholder="Ej.: x^4+2x^3-5x^2-6x+10"> 
+
+	<br><br><br>
+
+	<button style="margin-left: 30%;" class="btn btn-success" onclick="resolverCuartoGrado()">Obtener raíces</button>
+
+	<br><br><br>
+
+	<h4 id="answer" style="float: left; font-weight: bold; display: none;">Las raíces del polinomio son: </h4><div id="raiz"></div>
+
+	<div id="resultado"></div>
+	<div id="resultado2"></div>
+	<div id="resultado3"></div>
+	<div id="resultado4"></div>
+	
+</body>
+</html>

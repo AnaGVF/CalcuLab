@@ -1,0 +1,162 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Montserrat !important;
+	font-family: 'Merienda', cursive;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;	
+}
+
+.altura-69 {
+	height: 69px;
+}
+
+.altura-100 {
+	height: 100px;
+}
+
+.no-altura {
+	height: 0px !important;
+}
+
+.margin-0 {
+	margin: 0px !important;
+}
+
+.no-padding {
+	padding: 0px !important;
+}
+
+.left-padding-1 {
+	padding-left: 1em;
+}
+
+.left-padding-2 {
+	padding-left: 2em;
+}
+
+.top-padding-6 {
+	padding-top: 6em;
+}
+
+.height-topbar {
+	height: calc(100%-100px);
+}
+
+.hasFlex {
+	display: flex !important;
+}
+
+.flex-column {
+	flex-direction: column !important;
+}
+
+.justify-around {
+	justify-content: space-around !important;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+
+/*Top bar*/
+.option {
+	background-color: #CEA43E;
+	font-size: 1.5em;
+	padding: 0.5em 0.5em;
+	border-radius: 14px;
+	color: white;
+}
+
+/*Pantalla Inicial*/
+.section1 {
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.titulo {
+	display: flex;
+	justify-content: flex-start;
+	color: white;
+	flex-direction: column;
+	margin-top: 15%;
+	font-family: 
+}
+
+	.titulo h1 {
+		font-size: 5em;
+		font-family: 'Merienda', cursive !important;
+	}
+
+	.titulo p {
+		color: white;
+		font-size: 2em;
+	}
+
+.iniciar {
+	background-color: #A0CB3C;
+	font-size: 1.8em;
+	padding: 0.5em 0.5em;
+	border-radius: 14px;
+	color: white;
+	cursor: pointer;
+	width: 100%;
+}
+
+.year {
+	color: white;
+}
+
+/*Pantalla Acerca de*/
+.section2 {
+	background-image: url(../img/background2.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+	.subtitulo h2 {
+		color: white;
+		text-align: center;
+		font-size: 5em;
+		font-family: 'Merienda', cursive !important;
+	}
+
+	.subtitulo p {
+		color: white;
+		text-align: justify;
+		font-size: 1.2em;
+	}
+
+/*Pantalla Temas*/
+.section3 {
+	background-image: url(../img/background2.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.option2 {
+	background-color: #9D2323DE;
+	font-size: 1.3em;
+	padding: 0.5em 0.5em;
+	border-radius: 5px;
+	color: white;
+}
+
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistemas de Ecuaciones</title>
+
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script src="js/nerdamer.core.js"></script> 
+	<script src="js/Algebra.js"></script>
+	<script src="js/Calculus.js"></script>
+	<script src="js/Solve.js"></script>
+	<script src="js/Extra.js"></script> 
+
+</head>
+<body style="background-image: url(img/paper.jpg);">
+
+	<nav class="navbar navbar-light bg-light">
+		<a href="index.html"><button type="button" class="btn btn-secondary">Home</button></a>
+		<a style="margin-left: -18%;" href="index.html#temas"><button type="button" class="btn btn-warning">Temas</button></a>
+  		<h1 style="margin-left: 5%; font-weight: bold;">SISTEMAS DE ECUACIONES</h1>
+  		<form class="form-inline">
+    		<button class="btn btn-danger my-2 my-sm-0" type="submit">Try Again</button>
+  		</form>
+	</nav>
+
+	<div class="acomodacion" style="text-align: justify;">
+		<p>Resolver un sistema de ecuaciones lineales es encontrar todas sus soluciones a sus incógnitas. (No siempre existe solución, o bien, pueden existir infinitas soluciones.) <br> 
+		Existen 4 métodos para resolver un sistema de ecuaciones lineales: Reducción, Igualación, Sustitución y Gauss. En este apartado sólo se hablaran sobre los primeros tres mencionados, si quieres conocer sobre el método de Gauss, haz click <a href="transformaciones.html">aquí</a>. 
+
+		<br><br>
+
+		<b>Reducción</b>: consiste en operar entre las ecuaciones como, por ejemplo, sumar o restar ambas ecuaciones, de modo que una de las incógnitas desaparezca. Así, obtenemos una ecuación con una sola incógnita.
+
+		<br>
+
+		<b>Igualación</b>: consiste en aislar en ambas ecuaciones la misma incógnita para poder igualar las expresiones, obteniendo así una ecuación con una sola incógnita. 
+
+		<br>
+
+		<b>Sustitución</b>: consiste en despejar o aislar una de las incógnitas (por ejemplo, x) y sustituir su expresión en la otra ecuación. De este modo, obtendremos una ecuación de primer grado con la otra incógnita, y. Una vez resuelta, calculamos el valor de x sustituyendo el valor de y que ya conocemos.
+
+		<hr>
+		<br>
+
+		</p>
+
+		<p style="color: #ca0202;">
+
+		En el programa de abajo puedes practicar el resolver ecuaciones lineales con 3 incógnitas y ver los resultados. <br> Te recomiendo primero hacerlo a mano usando cualquiera de los tres métodos mencionados anteriormente y posteriormente comprobar tus resultados aquí.
+
+		</p>
+	</div>
+
+	<br><br>
+
+	<h4 style="margin-left: 5px;">Ingresa 3 ecuaciones para encontrar el valor de sus tres incógnitas: </h4><br>
+
+	<h2 style="float: left; margin-left: 5px;">Ecuación 1: </h2><br><br>
+	<h2 style="float: left; margin-left: 140px;"></h2> <input id="ecuacion1" type="text" placeholder="Ej.: 2*x-y=8"> 
+
+	<br><br><br>
+
+	<h2 style="float: left; margin-left: 5px;">Ecuación 2: </h2><br><br>
+	<h2 style="float: left; margin-left: 140px;"></h2> <input id="ecuacion2" type="text" placeholder="Ej.: 10*x+7*y-z=53"> 
+
+	<br><br><br>
+
+	<h2 style="float: left; margin-left: 5px;">Ecuación 2: </h2><br><br>
+	<h2 style="float: left; margin-left: 140px;"></h2> <input id="ecuacion3" type="text" placeholder="Ej.: 4*z+y=6"> 
+
+	<br><br><br>
+
+	<button style="margin-left: 30%;" class="btn btn-success" onclick="sustitucion()">Resolver</button>
+
+	<br><br><br>
+
+	<h4 id="answer" style="float: left; font-weight: bold; display: none; margin-left: 5px;">La soluciónes de las ecuaciones son: </h4><div id="respuestaX"></div>
+	<div id="respuestaY"></div><div id="respuestaZ"></div>
+
+	<br><br>
+	
+</body>
+</html>

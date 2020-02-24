@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Aplicación del Cálculo Integral en las Finanzas</title>
+
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script src="js/nerdamer.core.js"></script> 
+	<script src="js/Algebra.js"></script>
+	<script src="js/Calculus.js"></script>
+	<script src="js/Solve.js"></script>
+	<script src="js/Extra.js"></script> 
+
+</head>
+<body style="background-image: url(img/paper.jpg);">
+
+	<nav class="navbar navbar-light bg-light">
+		<a href="index.html"><button type="button" class="btn btn-secondary">Home</button></a>
+		<a style="margin-left: -5%;" href="index.html#temas"><button type="button" class="btn btn-warning">Temas</button></a>
+
+  		<h1 style="margin-left: 5%; font-weight: bold;">Aplicación del Cálculo Integral en las Finanzas</h1>
+  		<form class="form-inline">
+    		<button class="btn btn-danger my-2 my-sm-0" type="submit">Try Again</button>
+  		</form>
+	</nav>
+
+	<div class="acomodacion" style="text-align: justify;">
+		<p>
+		El Cálculo Integral se puede aplicar en muchísimos aspectos de nuestras vidas y en nuestros alrededores. <br>
+		En primera, nos permite encontrar con facilidad el área entre curvas, volúmenes de sólidos de revolución, la longitud de una onda, etc. <br>
+		Sin embargo, una de las áreas que tiene más peso en las vidas de las personas es en las finanzas. Gracias al Cálculo Integral, podemos calcular distintos conceptos financieros y económicos tales como: <br><br>
+
+		<b>Punto de Equilibrio</b>: es un concepto de las finanzas que hace referencia al nivel de ventas donde los costos fijos y variables se encuentran cubiertos. Esto supone que la empresa, en su punto de equilibrio, tiene un beneficio que es igual a cero (no gana dinero, pero tampoco pierde). <br><br>
+
+		<b>Monto de Inversión</b>: es un término económico que hace referencia a la colocación de capital en una operación, proyecto o iniciativa empresarial con el fin de recuperarlo con intereses en caso de que el mismo genere ganancias. <br><br>
+
+		<b>Z</b>: es una combinación de ratios predictivas que se ha demostrado útil para determinar la probabilidad de que determinada empresa tenga problemas de supervivencia. <br><br>
+
+		</p>
+
+		<hr>
+
+		<br>
+
+		<p style="color: #ca0202;">
+		A continuación se presenta un programa en donde tú puedes calcular estos valores. <br>
+		Sigue los pasos para obtener el Punto de Equilibrio, el Monto de Inversión y el valor de Z.<br> ¡Inténtalo!
+		</p>
+	</div>
+
+	<br><br>
+
+	<h4 style="margin-left: 5px;">Ingrese la 1ra ecuación:</h4><br>
+
+	<h2 style="float: left; margin-left: 5px;">Ecuación: </h2><br><br>
+	<h2 style="float: left; margin-left: 140px;"> y = </h2> <input id="ecuacion1" type="text" placeholder="Ej.: 0.03x+50"> 
+
+	<br><br><br>
+
+	<h4 style="margin-left: 5px;">Ingrese la 2da ecuación:</h4><br>
+
+	<h2 style="float: left; margin-left: 5px;">Ecuación: </h2><br><br>
+	<h2 style="float: left; margin-left: 140px;"> y = </h2> <input id="ecuacion2" type="text" placeholder="Ej.: 0.002x^2+1.5x"> 
+
+	<br><br><br>
+
+	<button style="margin-left: 30%;" class="btn btn-success" onclick="APPCIF()">Calcular</button>
+
+	<br><br><br>
+
+	<h4 id="answer1" style="float: left; font-weight: bold; display: none;">El Punto de Equilibrio será el número positivo de las raíces: </h4><div id="PE" style="text-align: center; padding: 20px;"></div>
+
+	<h4 id="simplificar" style="float: left; font-weight: bold;">Ingresa aquí la raíz positiva para simplificarla: </h4><input id="raizPositiva" type="text"><p id="simplificado" style="font-size: 1.5em; font-weight: bold; margin-top: 3%;"></p>
+
+	<br><br><br>
+
+	<button style="margin-left: 45%; margin-top: -11%;" class="btn btn-success" onclick="simplificacion()">Simplificar</button>
+
+	<h4 id="simplificado" style="float: left; font-weight: bold; display: none; margin-top: 3%;">El Monto de Inversión es: </h4><div id="MI" style="text-align: center; margin-top: -6%;"></div>
+
+	<h4 id="answer2" style="float: left; font-weight: bold; display: none;">El Monto de Inversión es: </h4><div id="MI" style="text-align: center; padding: 20px;"></div>
+
+	<h4 id="answer3" style="float: left; font-weight: bold; display: none;">Z = </h4><div id="Z" style="text-align: center; padding: 20px;"></div>
+
+	<h4 id="simplificar" style="float: left; font-weight: bold;">Ingresa aquí la raíz positiva para simplificarla: </h4><input id="raizPositiva2" type="text"><p id="simplificado2" style="font-size: 1.5em; font-weight: bold; margin-top: 3%;"></p>
+
+	<br><br><br>
+
+	<button style="margin-left: 45%; margin-top: -11%;" class="btn btn-success" onclick="simplificacion2()">Simplificar</button>
+	
+</body>
+</html>
